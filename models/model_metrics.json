@@ -1,0 +1,80 @@
+{
+    "best_model_name": "Tuned Random Forest",
+    "best_test_r2": 0.9673,
+    "best_test_mae": 2.794,
+    "best_test_rmse": 4.245,
+    "best_params": {
+        "regressor__max_depth": 12,
+        "regressor__min_samples_split": 8,
+        "regressor__n_estimators": 120
+    },
+    "models_summary": [
+        {
+            "Model": "Linear Regression",
+            "Train MAE": 4.648,
+            "Test MAE": 4.673,
+            "Train RMSE": 6.146,
+            "Test RMSE": 6.198,
+            "Train R\u00b2": 0.9319,
+            "Test R\u00b2": 0.9302
+        },
+        {
+            "Model": "Decision Tree",
+            "Train MAE": 1.806,
+            "Test MAE": 3.224,
+            "Train RMSE": 2.998,
+            "Test RMSE": 5.154,
+            "Train R\u00b2": 0.9838,
+            "Test R\u00b2": 0.9517
+        },
+        {
+            "Model": "Random Forest",
+            "Train MAE": 1.345,
+            "Test MAE": 2.79,
+            "Train RMSE": 2.048,
+            "Test RMSE": 4.237,
+            "Train R\u00b2": 0.9924,
+            "Test R\u00b2": 0.9674
+        },
+        {
+            "Model": "Gradient Boosting",
+            "Train MAE": 2.274,
+            "Test MAE": 2.845,
+            "Train RMSE": 3.406,
+            "Test RMSE": 4.309,
+            "Train R\u00b2": 0.9791,
+            "Test R\u00b2": 0.9663
+        }
+    ],
+    "training_samples": 7148,
+    "testing_samples": 1788,
+    "feature_count": 24,
+    "categorical_columns": [
+        "area_name",
+        "road_name",
+        "weather_conditions",
+        "roadwork_activity"
+    ],
+    "numerical_columns": [
+        "traffic_volume",
+        "average_speed",
+        "travel_time_index",
+        "road_capacity_utilization",
+        "incident_reports",
+        "environmental_impact",
+        "public_transport_usage",
+        "traffic_signal_compliance",
+        "parking_usage",
+        "pedestrian_cyclist_count",
+        "temp_min",
+        "temp_max",
+        "temp_mean",
+        "rain_mm",
+        "wind_speed",
+        "weekday",
+        "is_peak",
+        "is_weekend",
+        "traffic_intensity",
+        "incident_density"
+    ]
+}
